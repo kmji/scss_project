@@ -1,0 +1,10 @@
+@import './utills/variables';
+@import './utills/mixin';
+
+@import './base/reset';
+@import './base/preset';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/main';

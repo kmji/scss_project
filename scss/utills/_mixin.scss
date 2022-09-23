@@ -1,0 +1,35 @@
+@mixin positionCenter{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+}
+
+
+// $line 은 라인의 수
+// $lineHeight은 라인헤이트
+// 1과 28px은 디폴트값
+@mixin ellipsis($line:1,$lineHeight:1){
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @if($line > 1){
+        line-height: $lineHeight;
+        max-height: $lineHeight$line;
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+    }
+    @else{
+
+        white-space: nowrap;
+ 
+    
+
+    }
+    
+
+   
+}
